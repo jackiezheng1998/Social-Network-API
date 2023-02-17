@@ -1,0 +1,20 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.1",
+  "description": "This is a social network API that uses a NoSQL database to handle large amounts of unstructured data.",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "seed": "node utils/seed",
+    "heroku-postbuild": "node utils/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.0.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}
